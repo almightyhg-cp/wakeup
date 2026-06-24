@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================= -->
+  <!-- ★ Google Search Console 소유권 인증용 메타태그 자리              -->
+  <!-- Search Console에서 발급받은 태그를 아래 줄에 그대로 붙여넣으세요.   -->
+  <!-- 예: <meta name="google-site-verification" content="abcd1234...." /> -->
+  <!-- ============================================================= -->
+  <!-- VERIFICATION_META_TAG_HERE -->
+
+  <title>스마트다있소 | Mobile App Studio</title>
+  <meta name="description" content="스마트다있소 - Android/Flutter 모바일 애플리케이션 개발 스튜디오. 일상에 도움이 되는 앱을 만듭니다." />
+
+  <style>
+    :root {
+      --cream: #F7F4EE;
+      --sage: #8FAE9A;
+      --green-deep: #7E9B84;
+      --ink: #3A3D38;
+      --cheek: #F1B0A6;
+      --sun: #F5CB5C;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo",
+                   "Noto Sans KR", "Malgun Gothic", sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+    header {
+      background: var(--sage);
+      color: #fff;
+      padding: 64px 0 56px;
+      text-align: center;
+    }
+    header .logo {
+      width: 72px; height: 72px;
+      background: #fff;
+      border-radius: 24px;
+      margin: 0 auto 20px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 34px;
+    }
+    header h1 { font-size: 30px; font-weight: 700; letter-spacing: -0.5px; }
+    header p { margin-top: 10px; font-size: 16px; opacity: 0.92; }
+
+    section { padding: 48px 0; border-bottom: 1px solid rgba(58,61,56,0.08); }
+    section:last-of-type { border-bottom: none; }
+    h2 {
+      font-size: 20px; font-weight: 700; margin-bottom: 18px;
+      letter-spacing: -0.3px;
+    }
+    p.lead { font-size: 16px; margin-bottom: 14px; }
+
+    .apps { display: grid; gap: 14px; margin-top: 6px; }
+    .app-card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 18px 20px;
+      display: flex; align-items: center; gap: 14px;
+      box-shadow: 0 2px 10px rgba(58,61,56,0.05);
+    }
+    .app-card .ico {
+      width: 46px; height: 46px; flex-shrink: 0;
+      background: var(--cream);
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px;
+    }
+    .app-card .name { font-weight: 600; font-size: 15px; }
+    .app-card .desc { font-size: 13px; color: #6b6f68; margin-top: 2px; }
+
+    .info-table { width: 100%; border-collapse: collapse; margin-top: 6px; }
+    .info-table th, .info-table td {
+      text-align: left; padding: 12px 0; font-size: 15px;
+      border-bottom: 1px solid rgba(58,61,56,0.07); vertical-align: top;
+    }
+    .info-table th { width: 130px; color: #6b6f68; font-weight: 600; }
+    .info-table a { color: var(--green-deep); }
+
+    footer {
+      text-align: center; padding: 36px 0 48px;
+      font-size: 13px; color: #9a9e96;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">📱</div>
+    <h1>스마트다있소</h1>
+    <p>Mobile App Development Studio</p>
+  </header>
+
+  <main class="wrap">
+
+    <section>
+      <h2>About</h2>
+      <p class="lead">
+        스마트다있소는 Android 및 Flutter 기반 모바일 애플리케이션을
+        기획·개발하는 모바일 앱 개발 스튜디오입니다. 알람, 학습, 생활 도구 등
+        일상에 실질적인 도움이 되는 앱을 직접 설계하고 출시합니다.
+      </p>
+      <p class="lead">
+        사용자 개인정보를 최소한으로만 다루는 서버리스 설계를 지향하며,
+        Google Play 정책을 준수하여 안전하고 신뢰할 수 있는 앱을 제공합니다.
+      </p>
+    </section>
+
+    <section>
+      <h2>Our Apps</h2>
+      <div class="apps">
+        <div class="app-card">
+          <div class="ico">⏰</div>
+          <div>
+            <div class="name">기상미션 (Wake Mission)</div>
+            <div class="desc">미니게임을 깨야 알람이 꺼지는 게임형 알람 앱</div>
+          </div>
+        </div>
+        <div class="app-card">
+          <div class="ico">📚</div>
+          <div>
+            <div class="name">비춰보카 (예정)</div>
+            <div class="desc">OCR 기반 영단어 학습 · 간격 반복 암기 앱</div>
+          </div>
+        </div>
+        <div class="app-card">
+          <div class="ico">👶</div>
+          <div>
+            <div class="name">응애응애 (예정)</div>
+            <div class="desc">아기 울음 분석 · 육아 기록 도우미 앱</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <table class="info-table">
+        <tr>
+          <th>상호</th>
+          <td>스마트다있소</td>
+        </tr>
+        <tr>
+          <th>문의</th>
+          <td><a href="mailto:almightyhg@naver.com">almightyhg@naver.com</a></td>
+        </tr>
+      </table>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 스마트다있소 (SmartDaisso). All rights reserved.
+  </footer>
+
+</body>
+</html>
