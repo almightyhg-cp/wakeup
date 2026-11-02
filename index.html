@@ -37,20 +37,20 @@
 <div class="wrap">
   <h1>Privacy Policy — Wake Mission</h1>
   <p class="lang"><strong>English</strong> · <a href="ko.html">한국어</a></p>
-  <p class="eff"><strong>Effective date: June 24, 2026</strong></p>
+  <p class="eff"><strong>Effective date: November 2, 2026</strong></p>
 
   <p>Wake Mission ("the App", "we", "us") is an alarm-clock app that makes you complete
-  missions (math, memory, shake, photo, etc.) to dismiss the alarm. This Privacy
+  missions (math, memory, shake, typing, etc.) to dismiss the alarm. This Privacy
   Policy explains what information is involved when you use the App.</p>
 
   <p>We do <strong>not</strong> operate our own servers and the App does <strong>not</strong>
   require an account or login. Your alarms and settings are stored
-  <strong>only on your device</strong>.</p>
+  <strong>on your device</strong>; a copy exists elsewhere only if you export a backup
+  file yourself to a location you choose.</p>
 
   <h2>1. Information we collect</h2>
   <p><strong>We (the developer) do not collect or receive any personal information from you.</strong>
-  The App has no backend, no sign-in, and does not transmit your alarms, settings,
-  or photos to us.</p>
+  The App has no backend, no sign-in, and does not transmit your alarms or settings to us.</p>
   <p>Data created while you use the App is stored locally on your device only:</p>
   <ul>
     <li>Alarm times, repeat days, selected missions, alarm sound and volume</li>
@@ -59,11 +59,17 @@
   </ul>
   <p>You can erase all of this at any time by clearing the App's storage or uninstalling the App.</p>
 
+  <h3>Backup export and restore</h3>
+  <p>When you tap <strong>Export backup</strong> in Settings, the App writes your alarms (times, repeat
+  days, missions, etc.), wake records (successful dates and wake-up times), daily-challenge stamps,
+  coins and owned mascots, and theme and sound-effect settings into a single JSON file and saves it
+  <strong>to the location you choose in the system file-save dialog</strong>. Restoring reads a backup
+  file you pick and overwrites the current data. The file is never sent to us; if you save it to a
+  cloud storage service or another location, that service's policies apply.</p>
+
   <h2>2. Camera and photos</h2>
-  <p>If you choose a <strong>photo mission</strong>, the App uses your camera to take a picture so it
-  can check that you found the requested object. This recognition runs <strong>entirely on
-  your device</strong> (on-device machine-learning model). Photos are used only to verify
-  the mission and are <strong>not uploaded, shared, or sent to us or any third party</strong>.</p>
+  <p>The current version <strong>does not use the camera</strong> and does not request camera
+  permission. It does not take, store, or transmit photos.</p>
 
   <h2>3. Advertising (Google AdMob)</h2>
   <p>The App shows ads in the practice/menu area using <strong>Google AdMob</strong>. AdMob is
@@ -83,8 +89,13 @@
 
   <h3>Consent in the EEA, UK and Switzerland</h3>
   <p>Where required, the App uses Google's User Messaging Platform (UMP) to ask for your
-  consent before serving personalized ads, in line with GDPR. You can change or
-  withdraw your choice later from the App.</p>
+  consent before serving personalized ads, in line with GDPR. Consent is requested when
+  you first launch the App, and <strong>the App currently has no menu to reopen the consent
+  choice</strong>. To change your choice, clear the App's data in your device settings or reinstall
+  the App, and consent will be requested again on the next launch (this also erases your alarms and
+  other app data, so we recommend exporting a backup first). You can also manage ad personalization in
+  Google's ad settings (<a href="https://adssettings.google.com">https://adssettings.google.com</a>) or in
+  your device's ad settings (reset or delete the advertising ID).</p>
 
   <h3>Users in the United States</h3>
   <p>Depending on your state, you may have the right to opt out of the "sale" or
@@ -96,12 +107,17 @@
     <li><strong>Alarms &amp; reminders / exact alarm, full-screen intent</strong>: to ring the alarm at the
       exact time and show the full-screen mission, even when the screen is locked.</li>
     <li><strong>Notifications</strong>: to show the alarm and reminders.</li>
-    <li><strong>Camera</strong>: photo mission only (on-device, not uploaded).</li>
     <li><strong>Vibrate, wake lock, run at startup (boot)</strong>: to reliably trigger and keep the
       alarm running and to restore scheduled alarms after a reboot.</li>
     <li><strong>Foreground service / media playback</strong>: to keep playing the alarm sound.</li>
     <li><strong>Display over other apps / ignore battery optimizations</strong>: to make sure the alarm
       mission appears over other apps and is not killed by the system.</li>
+    <li><strong>Reorder running apps (REORDER_TASKS)</strong>: to bring the mission screen to the front
+      when the alarm rings, if it is hidden behind another app such as the phone's built-in alarm.</li>
+    <li><strong>Do Not Disturb (notification policy) access (ACCESS_NOTIFICATION_POLICY)</strong>: declared
+      because the alarm library the App uses requires it; it relates to applying your chosen alarm volume
+      when the alarm rings. The App does not read or change your Do Not Disturb settings and does not
+      separately ask you to grant this permission.</li>
   </ul>
   <p>Permissions are used only for the features above and are not used to collect personal data.</p>
 
